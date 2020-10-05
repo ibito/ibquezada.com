@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap");
+
+* {
+  font-family: "Roboto Mono";
+  font-weight: 100;
+}
+
+.name {
+  margin-bottom: 20px;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+/* blinking cursor */
+.blinking-cursor {
+  background: #000;
+  line-height: 17px;
+  margin-left: 3px;
+  animation: blink 0.8s infinite;
+  width: 16px;
+  height: 26px;
+  display: inline-block;
+  margin-left: 3px;
+}
+
+@keyframes blink {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  50% {
+    background: rgba(0, 0, 0, 1);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0);
+  }
+}
